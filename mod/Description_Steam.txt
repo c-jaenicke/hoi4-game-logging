@@ -31,7 +31,9 @@ More might be added in the future.
    [*] Import the generated [code]csv.txt[/code] into a excel like application
 [/olist]
 
-[url=https://github.com/c-jaenicke?tab=packages&repo_name=hoi4-game-analysis]Get the parser here [/url]
+[url=https://github.com/c-jaenicke/hoi4-game-logging/releases]Get the parser here [/url]
+
+[b]Remeber to delete the [code]game_logging.log[/code] file between runs! The next run will be appended to the file if it is not deleted![/b]
 
 [hr][/hr]
 
@@ -43,4 +45,4 @@ I am not responsible for any files going missing or being deleted by accident.
 
 [h1]Code[/h1]
 
-[url=https://github.com/c-jaenicke/hoi4-game-analysis]All the code and info can be found here [/url]
+[url=https://github.com/c-jaenicke/hoi4-game-logging]All the code and info can be found here [/url]

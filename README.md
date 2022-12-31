@@ -22,6 +22,8 @@ The logged attributes include:
 1. Run the `hoi4-log-parser-win-amd64.exe`
 1. Import the generated `csv.txt` into a excel like application
 
+[Get the parser here](https://github.com/c-jaenicke/hoi4-game-logging/releases)
+
 **Remeber to delete the `game_logging.log` file between runs! The next run will be appended to the
 file if it is not deleted!**
 

@@ -1,0 +1,106 @@
+logging_decisions = {
+	logging_game = {
+		allowed = { 
+			always = yes
+		}
+
+		days_re_enable  = 0
+
+		priority = 1000
+
+		ai_will_do {
+			base = 0
+			factor = 0
+		}
+
+		complete_effect = {
+			log = ">>>>> [GetDateText]: [Root.GetName] LOGGED"
+		}
+
+	# AUTOMATION
+
+		visible = {
+			ROOT = {
+				is_ai = no
+			}
+		}
+
+		days_mission_timeout = 15
+		is_good = yes
+
+		available = {
+			always = no
+		}
+
+		
+		timeout_effect = {
+			log = "[GetDateText]: [Root.GetName] >>>>> LOGGED"
+
+
+			set_variable = {
+				var = 283original_tag
+				value = original_tag
+			}
+
+			set_variable = {
+				var = 283number_armies
+				value = num_armies
+			}
+		
+			set_variable = {
+				var = 283global_number_days
+				value = global.num_days
+			}
+			
+			set_variable = {
+				var = 283number_infantry_equip
+				value = num_equipment@infantry_equipment 
+			}
+			
+			set_variable = {
+				var = 283number_ships
+				value = num_ships
+			}
+
+			set_variable = {
+				var = 283manpower_amount
+				value = manpower_k
+			}
+			
+			set_variable = {
+				var = 283fuel_amount
+				value = fuel_k
+			}
+
+			set_variable = {
+				var = 283number_light_tank_divs
+				value = num_armies_with_type@light_armor
+			}
+
+			
+			set_variable = {
+				var = 283number_medium_tank_divs
+				value = num_armies_with_type@medium_armor
+			}
+
+
+			set_variable = {
+				var = 283number_heavy_tank_divs
+				value = num_armies_with_type@heavy_armor
+			}
+
+
+
+			print_variables = {
+				file = game_logging
+				#text = asd
+				append = yes
+				print_global = yes
+				var_list = { 283original_tag 283number_armies 283global_number_days
+                283number_infantry_equip 283number_ships 283manpower_amount
+                283fuel_amount
+                283number_light_tank_divs 283number_medium_tank_divs 283number_heavy_tank_divs
+				}
+			}
+		}
+}

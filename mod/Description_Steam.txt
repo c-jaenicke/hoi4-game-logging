@@ -1,0 +1,46 @@
+[h1]Analyse your games![/h1]
+
+[hr][/hr]
+
+This mod adds a decision to the game that automatically fires every month. When it fires, it writes country attributes to a file. After that you can run a script that parses the created file and turns it into a CSV file that can be imported into a excel like application and turned into graphs.
+
+The logged attributes include:
+[list]
+    [*] number of divisions
+    [*] amount of infantry equipment
+    [*] amount of ships
+    [*] manpower
+    [*] fuel
+    [*] number light tank divisions
+    [*] number medium tank divisions
+    [*] numbers heavy tank divisions
+[/list]
+
+More might be added in the future.
+
+[hr][/hr]
+
+[h1]Instructions[/h1]
+
+[olist]
+   [*] Subscribe to the mod on Steam
+   [*] Play a round of HoI4
+   [*] Copy the file containing the logs, found in [code]Documents/Paradox Interactive/Hearts of Iron IV/logs/variable_dumps/game_logging.log[/code] into a new folder
+   [*] Move the [code]hoi4-log-parser-win-amd64.exe[/code] into the same folder
+   [*] Run the [code]hoi4-log-parser-win-amd64.exe[/code]
+   [*] Import the generated [code]csv.txt[/code] into a excel like application
+[/olist]
+
+[url=https://github.com/c-jaenicke?tab=packages&repo_name=hoi4-game-analysis]Get the parser here [/url]
+
+[hr][/hr]
+
+[h1]Disclaimer[/h1]
+
+I am not responsible for any files going missing or being deleted by accident.
+
+[hr][/hr]
+
+[h1]Code[/h1]
+
+[url=https://github.com/c-jaenicke/hoi4-game-analysis]All the code and info can be found here [/url]

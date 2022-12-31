@@ -31,6 +31,9 @@ func main() {
 	defer file.Close()
 
 	scanner := bufio.NewScanner(file)
+	const maxCapacity = 10240 * 1024
+	buf := make([]byte, maxCapacity)
+	scanner.Buffer(buf, maxCapacity)
 
 	csvLine := ""
 	for scanner.Scan() {
